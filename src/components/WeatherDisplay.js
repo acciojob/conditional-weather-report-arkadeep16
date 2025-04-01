@@ -4,15 +4,14 @@ import React from 'react'
 const WeatherDisplay = ({weatherData}) => {
     console.log(weatherData)
   return (
-    <div>
-        
-        <p>Temperature: <span style={
+    <>
+        <p><span style={
             {
                 color: weatherData.temperature > 20 ? "red" : "blue" 
             }
-            }>{weatherData.temperature}</span> </p>
+            }>Temperature: {weatherData.temperature}</span> </p>
         <p>Conditions: {weatherData.conditions}</p>
-    </div>
+    </>
   )
 }
 
