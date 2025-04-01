@@ -9,7 +9,7 @@ const WeatherDisplay = ({weatherData}) => {
             {
                 color: weatherData.temperature > 20 ? "red" : "blue" 
             }
-            }>Temperature: {weatherData.temperature}</span> </p>
+            }>Temperature: {weatherData.temperature}</span></p>
         <p>Conditions: {weatherData.conditions}</p>
     </>
   )
